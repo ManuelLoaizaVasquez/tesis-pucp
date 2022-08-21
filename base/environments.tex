@@ -1,0 +1,32 @@
+% Sources:
+% https://www.overleaf.com/learn/latex/Environments
+% https://www.overleaf.com/learn/latex/Theorems_and_proofs
+
+% Creates pink environment for problem statements
+\newenvironment{statement}[1]{\smallskip\noindent\color[rgb]{1.00, 0.00, 0.50}{\textbf{#1.}}}{}
+\allowdisplaybreaks[1]
+
+% Creates solution environment based on proof environment
+\newenvironment{solution}{\begin{proof}[Soluci\'on]}{\end{proof}}
+
+% Spanish formatting and numbering such as theorems, definitions,
+% propositions, remarks, corollaries, lemmas and so on
+\renewcommand{\contentsname}{Contenido}
+\renewcommand*{\proofname}{Prueba}
+
+\newtheorem{theorem}{Teorema}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem*{proposition}{Proposici\'on}
+\newtheorem{conjecture}[theorem]{Conjetura}
+\newtheorem*{postulate}{Postulado}
+\newtheorem*{axiom}{Axioma}
+
+\theoremstyle{definition}
+\newtheorem{defn}[theorem]{Definici\'on}
+\newtheorem{example}[theorem]{Ejemplo}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Observaci\'on}
+\newtheorem*{notation}{Notaci\'on}
+\newtheorem*{note}{Nota}
