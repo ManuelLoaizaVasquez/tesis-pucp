@@ -1,12 +1,14 @@
-all: pdf/document.pdf
+all: pdf/tesis.pdf
 
 clean:
-	rm -f pdf/document.pdf
+	rm pdf/tesis.pdf
 	rm document.*
 
-pdf/document.pdf: tex/*.tex
+pdf/tesis.pdf: tex/*.tex
 	pdflatex base/document.tex
-	mv document.pdf pdf/
+	rm pdf/tesis.pdf
+	mv document.pdf tesis.pdf
+	mv tesis.pdf pdf/
 	rm document.*
 
 # pdf/document.pdf: tex/*.tex bib/bibliography.bib
