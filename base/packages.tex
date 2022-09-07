@@ -1,5 +1,7 @@
 \usepackage[utf8]{inputenc}
 
+\usepackage{amsbsy}
+
 \usepackage{amscd}
 
 \usepackage{amsfonts}
@@ -8,33 +10,68 @@
 
 \usepackage{amssymb}
 
+\usepackage{amstext}
+
 \usepackage{amsthm}
 
-% Defines commands to access bold math symbols
+% Manages culturally-determined typographical rules for a
+% wide range of languages.
+\usepackage[spanish, english]{babel}
+
+% Defines commands to access bold math symbols.
 % \usepackage{bm}
 
-% Offers customization of captions in floating environments
+% Offers customization of captions in floating environments.
 % \usepackage{caption}
+
+% Provides both foreground and background color management.
+\usepackage{color}
+
+% Deprecated. Use graphicx package instead.
+% \usepackage{epsfig}
 
 \usepackage{euscript}
 
-% Defines floating objects such as figures and tables
-% \usepackage{float}
+% Provides extensive facilities, both for constructing headers and footers,
+% and for controlling their use.
+\usepackage{fancyhdr}
 
-% Creates regions that can break across pages
+% Defines floating objects such as figures and tables.
+\usepackage{float}
+
+% Allows the user to select font encodings.
+\usepackage[T1]{fontenc}
+
+% Creates regions that can break across pages.
 \usepackage{framed}
 
-% Reduces horizontal margin
+% Reduces horizontal margin.
 % \usepackage{fullpage}
 
-% Enhances graphics package
-% \usepackage{graphicx}
+% Provides an easy and flexible user interface to customize page layout,
+% implementing auto-centering and auto-balancing mechanisms.
+\usepackage[lmargin=2.5cm, rmargin=2.5cm, tmargin=3.0cm, bmargin=3.0cm]{geometry}
+
+% Enhances graphics package.
+\usepackage{graphicx}
 
 \usepackage{hyperref}
 
-% Enhances LaTeX cross-referencing
+% Produces multiple indexes.
+\usepackage{imakeidx}
+
+% Translates various standard and other input encodings.
+\usepackage[utf8]{inputenc}
+
+% Enhances LaTeX cross-referencing.
 \usepackage[nameinlink]{cleveref}
 
 \usepackage{latexsym}
 
 \usepackage{mathtools}
+
+% Replaces strings in encapsulated PostScript figures.
+\usepackage{psfrag}
+
+% Allows figures or tables to have text wrapped around them.
+\usepackage{wrapfig}

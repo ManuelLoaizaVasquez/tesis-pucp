@@ -1,64 +1,20 @@
-\title{C\'odigo Nombre del Curso}
-\author{Tu nombre aqu\'i}
-\date{Fecha}
+\makeindex
 
 \begin{document}
 
-\maketitle
+\input{tex/cover.tex}
+\input{tex/committee.tex}
+\input{tex/acknowledgment.tex}
+\input{tex/abstract.tex}
+\input{tex/resumen.tex}
+\input{tex/indexes.tex}
 
-\vspace*{-0.25in}
-\centerline{Tu universidad aqu\'i}
-\centerline{Tu regi\'on y pa\'is aqu\'i}
-\centerline{\mailto{tucorreoaqui@pucp.edu.pe}}
-\vspace*{0.15in}
 
-\begin{framed}
-  Esta es una plantilla en \LaTeX.
-  Util\'izala en tus listas de ejercicios, notas de clases y mucho m\'as.
-\end{framed}
+\include{tex/introduction.tex}
+\include{tex/chapter-01.tex}
+\include{tex/chapter-02.tex}
+\include{tex/conclusion.tex}
 
-\begin{statement}{1}
-    Este es el enunciado de un problema.
-    Colocar el enunciado de un problema de un color diferente permite distinguir entre el problema y la soluci\'on.
-\end{statement}
-
-\begin{proof}
-    Tipea tus soluciones en esta secci\'on. Usa las definiciones, lemas y ejemplos cuando sean necesarios.
-    \begin{defn}
-        Definimos $\exp(x)$ para $x \in \BR$ el valor de $$\sum_{i = 0}^\infty\frac{x^i}{i!}.$$
-    \end{defn}
-    Al igual que en la definici\'on anterior,
-    usar ecuaciones en l\'ineas separadas cuando sea posible,
-    esto hace tu problema m\'as le\'ible. Usa \texttt{align*} para lista de igualdades:
-    \begin{align*}
-        0 &= 0 + 0 + 0 + 0 + \dots\\
-        &= (1 - 1) + (1 - 1) + \dots \\
-        &= 1 + (-1 + 1) + (-1 + 1) + \dots \\
-        &= 1 + 0 + 0 + 0 \dots \\
-        &= 1.
-    \end{align*}
-    Si necesitas listar cosas, usa \texttt{enumerate} o \texttt{itemize}.
-    Por ejemplo:
-    \begin{enumerate}
-        \item Debo ser aceptado en Google antes de egresar.
-        \item Debo clasificar al ACM ICPC World Finals.
-        \item Debo terminar dentro del top $10$ en el mundial IEEEXtreme.
-        \item Debo trabajar como ingeniero de software remoto en paralelo a la universidad.
-        \item Debo entrenar al menos $20$ horas semanales algoritmos, estructuras de datos,
-        teor\'ia de la complejidad y matem\'atica discreta en paralelo a la universidad.
-        \item Debo aprender backend, frontend, mobile, databases, networks, cloud,
-        design patterns y sistemas operativos en paralelo a la universidad.
-        \item Debo crear mi lenguaje de programaci\'on orientado a objetos antes de egresar.
-    \end{enumerate}
-    Todas las secciones \texttt{proof} terminan con el cuadrado que simboliza el hecho de que ha concluido la demostraci\'on.
-\end{proof}
-
-\begin{statement}{2}
-    Si la soluci\'on de un problema es f\'acil de chequear si es correcta, ¿el problema debe ser f\'acil de resolver?
-\end{statement}
-
-\begin{proof}
-    Buena suerte.
-\end{proof}
+\include{tex/references.tex}
 
 \end{document}
